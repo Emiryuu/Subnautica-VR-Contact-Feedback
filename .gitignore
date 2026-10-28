@@ -1,0 +1,30 @@
+# Visual Studio user-specific files and folders
+.vs/
+*.user
+*.userosscache
+*.suo
+*.rsuser
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+# Visual Studio / .NET caches
+*.sln.docstates
+*.cache
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.log
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+# Test output
+[Tt]est[Rr]esult*/
+*.trx
+# Local game and mod deployment files
+BepInEx/
+Subnautica_Data/
+*.zip
