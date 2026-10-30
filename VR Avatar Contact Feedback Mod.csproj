@@ -3,9 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
 	<AssemblyName>VR_Avatar_Contact_Feedback_Mod</AssemblyName>
+	<Description>A mod that adds controller haptic feedback when the player contacts environmental surfaces in Subnautica VR</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>11</LangVersion>
+    <LangVersion>latest</LangVersion>
 	<RootNamespace>VR_Avatar_Contact_Feedback_Mod</RootNamespace>
 
     <RestoreAdditionalProjectSources>
