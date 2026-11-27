@@ -2,31 +2,30 @@
 
 A work-in-progress BepInEx mod for **Subnautica VR** that aims to provide short controller-haptic pulses when the player makes contact with environmental surfaces.
 
-The project is being developed as part of a graduation project exploring whether physical feedback can support spatial awareness and exploration in virtual reality.
+The project has been developed as part of a graduation project exploring whether physical feedback can support spatial awareness and exploration in virtual reality.
 
-> **Project status:** Early development. The initial release is not available yet.
+> **Project status:** Finished development. The initial release will be uploaded soon.
 
-## Planned behaviour
+## Behaviour
 
-- Detect contact between the VR avatar or tracked hands and environmental geometry.
-- Send a brief haptic pulse to the corresponding VR controller.
-- Avoid continuous vibration while contact is maintained by using a cooldown or contact-entry rule.
-- Keep the feature easy to enable or disable for research comparisons.
+- Detects contact between the VR avatar or tracked hands and environmental geometry.
+- Sends a brief haptic pulse to the corresponding VR controller upon contact.
+- Avoids continuous vibration while contact is maintained in a single position by using a isTouching state.
+- If the avatar remains in contact with an object surface and makes scrubbing movements instead of release, sends a continuous slight vibration as a feedback of scrubbing.
 
 ## Requirements
 
-The final mod is expected to require:
+This mod requires:
 
 - Subnautica (PC version)
 - BepInEx 5
 - SubmersedVR
 - A SteamVR/OpenVR-compatible VR setup with motion controllers
 
-Exact supported game, BepInEx, and SubmersedVR versions will be documented once the first working build is tested.
-
 ## Installation
 
-Installation instructions will be added with the first release. Until then, this repository is primarily source code and development documentation.
+1. Download the [zip file](https://github.com/Emiryuu/Subnautica-VR-Contact-Feedback/releases/tag/v1.0) in Release.
+1. Unzip and place the `VR_Avatar_Contact_Feedback_Mod.dll` file inside the plugins folder of BepInEx.
 
 ## Building from source
 
@@ -37,10 +36,6 @@ Installation instructions will be added with the first release. Until then, this
 5. Copy the compiled mod DLL to the game's `BepInEx/plugins` folder alongside its required dependencies.
 
 Do not commit or redistribute Subnautica game files, game assemblies, or third-party DLLs unless their licenses explicitly allow it.
-
-## Development notes
-
-The first technical milestone is an isolated left/right controller vibration test. Once that works, the project will validate how SubmersedVR represents hand or avatar contact before connecting contact events to haptics.
 
 ## Credits
 
