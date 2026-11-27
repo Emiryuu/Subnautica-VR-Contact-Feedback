@@ -4,7 +4,7 @@ A work-in-progress BepInEx mod for **Subnautica VR** that aims to provide short 
 
 The project has been developed as part of a graduation project exploring whether physical feedback can support spatial awareness and exploration in virtual reality.
 
-> **Project status:** Finished development. The initial release will be uploaded soon.
+> **Project status:** Development finished. The initial release has been uploaded.
 
 ## Behaviour
 
